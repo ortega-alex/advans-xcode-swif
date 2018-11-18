@@ -48,11 +48,11 @@ class CampaignView: UICollectionViewCell {
     var campaignController : CampaignController? {
         didSet{
             guard let campaniaC = campaignController else { return }
-            greenButton.addTarget(campaniaC, action: #selector(campaniaC.hadleTouchUpInside(_:)), for: .touchUpInside)
-            blackButton.addTarget(campaniaC, action: #selector(campaniaC.hadleTouchUpInside(_:)), for: .touchUpInside)
-            blueButton.addTarget(campaniaC, action: #selector(campaniaC.hadleTouchUpInside(_:)), for: .touchUpInside)
-            purpleButton.addTarget(campaniaC, action: #selector(campaniaC.hadleTouchUpInside(_:)), for: .touchUpInside)
-            yellowButton.addTarget(campaniaC, action: #selector(campaniaC.hadleTouchUpInside(_:)), for: .touchUpInside)
+            //greenButton.addTarget(campaniaC, action: #selector(campaniaC.hadleTouchUpInside(_:)), for: .touchUpInside)
+            //blackButton.addTarget(campaniaC, action: #selector(campaniaC.hadleTouchUpInside(_:)), for: .touchUpInside)
+            //blueButton.addTarget(campaniaC, action: #selector(campaniaC.hadleTouchUpInside(_:)), for: .touchUpInside)
+            //purpleButton.addTarget(campaniaC, action: #selector(campaniaC.hadleTouchUpInside(_:)), for: .touchUpInside)
+            //yellowButton.addTarget(campaniaC, action: #selector(campaniaC.hadleTouchUpInside(_:)), for: .touchUpInside)
             trashButton.addTarget(campaniaC, action: #selector(campaniaC.hadleDeleteCampania(_:)), for: .touchUpInside)
             addButton.addTarget(campaniaC, action: #selector(campaniaC.hadleAddCampania(_:)), for: .touchUpInside)
         }

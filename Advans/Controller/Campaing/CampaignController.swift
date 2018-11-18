@@ -35,7 +35,7 @@ class CampaignController: UICollectionViewController  {
         return imageView
     }()
     
-    private lazy var btnFoalt : UIButton = {
+    lazy var btnFoalt : UIButton = {
         let btn = UIButton()
         btn.frame = CGRect(x: ((self.collectionView.frame.size.width / 2) - 30) , y: (self.collectionView.frame.size.height - 80) , width: 60, height: 60)
         btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
@@ -82,19 +82,19 @@ class CampaignController: UICollectionViewController  {
     }
     
     @objc private func hadleMenu(){
-        print("menu")
-       /* let layout = UICollectionViewFlowLayout()
+        //print("menu")
+        let layout = UICollectionViewFlowLayout()
         let menuController = MenuController(collectionViewLayout : layout)
         menuController.campaings = self.campaigns
         let navigateController = UINavigationController(rootViewController: menuController)
-        self.present(navigateController, animated: true, completion: nil)*/
+        self.present(navigateController, animated: true, completion: nil)
     }
     
     @objc private func hadleLogout(){
-        print("logout")
-        /*User.clear()
+        //print("logout")
+        User.clear()
         let loginController = LoginController()
-        present(loginController, animated: true, completion: nil)*/
+        present(loginController, animated: true, completion: nil)
     }
     
     @objc private func getCampania(){
@@ -136,8 +136,8 @@ class CampaignController: UICollectionViewController  {
     }
     
     @objc func hadleDeleteCampania(_ button : UIButton){
-        print("delete campania id_campania: " , campaigns[button.tag]._id as Any )
-        /*DispatchQueue.main.async{
+        //print("delete campania id_campania: " , campaigns[button.tag]._id as Any )
+        DispatchQueue.main.async{
             let url : String = self.global.URL + "campania/" + self.campaigns[button.tag]._id!
             Alamofire.request(
                 url ,
@@ -157,69 +157,28 @@ class CampaignController: UICollectionViewController  {
                     print(error.localizedDescription)
                 }
             })
-        }*/
+        }
     }
     
     @objc func hadleAddCampania(_ button : UIButton){
-        print("add campania id_campania: " , self.campaigns[button.tag] as Any)
-        /*let markerController = MarkerController(collectionViewLayout: UICollectionViewFlowLayout())
+        //print("add campania id_campania: " , self.campaigns[button.tag] as Any)
+        let markerController = MarkerController(collectionViewLayout: UICollectionViewFlowLayout())
         var call = Call()
         call.name = self.campaigns[button.tag].name
         markerController.call = call
-        navigationController?.pushViewController(markerController, animated: true)*/
+        navigationController?.pushViewController(markerController, animated: true)
     }
     
     @objc func hadleTouchUpInside(_ button : UIButton){
-        print("TouchUpInside id_campania: " , button.titleLabel?.text as Any  , "stado: " , button.tag )
-        /*let detailCampaignController = DetailCampaignController(collectionViewLayout: UICollectionViewFlowLayout())
-         detailCampaignController.campaign = self.campaigns[button.tag]
-         if let text : String = button.titleLabel!.text {
-         detailCampaignController.id = text
-         }
-         let navigareController = UINavigationController(rootViewController: detailCampaignController)
-         self.present(navigareController, animated: true, completion: nil)*/
+        //print("TouchUpInside id_campania: " , button.titleLabel?.text as Any  , "stado: " , button.tag )
+        let detailCampaignController = DetailCampaignController(collectionViewLayout: UICollectionViewFlowLayout())
+        detailCampaignController.campaign = self.campaigns[Int((button.titleLabel?.text)!)!]
+        detailCampaignController.id = String(describing: button.tag)
+        let navigareController = UINavigationController(rootViewController: detailCampaignController)
+        self.present(navigareController, animated: true, completion: nil)
     }
     
     @objc func hadleSync(){
         print("sycn")
-    }
-}
-
-extension CampaignController : UICollectionViewDelegateFlowLayout {
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CampaignViewCell
-        let campaign = campaigns[indexPath.row]
-        
-        cell.campaign = campaign
-        cell.index = indexPath.row
-        /*cell.campaignController = self
-        if (campaign.type == "M") {
-            cell.greenButton.isHidden = true
-            cell.addButton.isHidden = false
-        } else {
-            cell.addButton.isHidden = true
-        }
-        cell.addButton.tag = indexPath.row
-        cell.trashButton.tag = indexPath.row
-        cell.greenButton.tag = indexPath.row
-        cell.blackButton.tag = indexPath.row
-        cell.blueButton.tag = indexPath.row
-        cell.purpleButton.tag = indexPath.row
-        cell.yellowButton.tag = indexPath.row*/
-        return cell
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return campaigns.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width , height: 135)
-    }
-    
-    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let off = self.collectionView.contentOffset.y
-        self.btnFoalt.frame = CGRect(x: ((self.collectionView.frame.size.width / 2) - 30) , y: off + (self.collectionView.frame.size.height - 80) , width: btnFoalt.frame.size.width , height: btnFoalt.frame.size.height )
     }
 }

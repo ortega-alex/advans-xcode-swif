@@ -7,23 +7,109 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8DABBF75B4A517CBF98A237 /* Pods_Advans.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F455E31AB7D5E0681515A1 /* Pods_Advans.framework */; };
+		FA2662CF219CB056000012AF /* SocialMediaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2662CE219CB056000012AF /* SocialMediaController.swift */; };
+		FA2662D1219CB41C000012AF /* MenuSocialMediaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2662D0219CB41C000012AF /* MenuSocialMediaViewCell.swift */; };
+		FA2662D8219E3C38000012AF /* MenuWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2662D7219E3C38000012AF /* MenuWidgetView.swift */; };
+		FA2662DA219E3C7E000012AF /* ButtonMenuSocialViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2662D9219E3C7E000012AF /* ButtonMenuSocialViewCell.swift */; };
+		FA2662E0219FAD24000012AF /* TempController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2662DF219FAD24000012AF /* TempController.swift */; };
+		FA2662E221A0B128000012AF /* CampaignViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2662E121A0B128000012AF /* CampaignViewCell.swift */; };
+		FA2662E521A0BE9D000012AF /* CampaingControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2662E421A0BE9C000012AF /* CampaingControllerExtension.swift */; };
+		FA2662E821A0C269000012AF /* CampaignViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2662E721A0C269000012AF /* CampaignViewCellExtension.swift */; };
+		FA2662EA21A0C2EB000012AF /* CampaignStatusViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2662E921A0C2EB000012AF /* CampaignStatusViewCell.swift */; };
 		FA63968D2197674E0075F75D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63968C2197674E0075F75D /* AppDelegate.swift */; };
-		FA63968F2197674E0075F75D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63968E2197674E0075F75D /* ViewController.swift */; };
-		FA6396922197674E0075F75D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6396902197674E0075F75D /* Main.storyboard */; };
 		FA6396952197674E0075F75D /* Advans.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA6396932197674E0075F75D /* Advans.xcdatamodeld */; };
 		FA639697219767590075F75D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA639696219767590075F75D /* Assets.xcassets */; };
 		FA63969A2197675A0075F75D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6396982197675A0075F75D /* LaunchScreen.storyboard */; };
+		FA6396A621976B710075F75D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396A521976B710075F75D /* Extensions.swift */; };
+		FA6396A821976BBE0075F75D /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396A721976BBE0075F75D /* Global.swift */; };
+		FA6396AA21976C020075F75D /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396A921976C020075F75D /* Archive.swift */; };
+		FA6396AC21976EC30075F75D /* CampaignSms.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396AB21976EC30075F75D /* CampaignSms.swift */; };
+		FA6396AE21976EF60075F75D /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396AD21976EF60075F75D /* Campaign.swift */; };
+		FA6396B021976F950075F75D /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396AF21976F950075F75D /* Menu.swift */; };
+		FA6396B221976FBB0075F75D /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396B121976FBB0075F75D /* Register.swift */; };
+		FA6396B421976FE00075F75D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396B321976FE00075F75D /* User.swift */; };
+		FA6396B6219771C90075F75D /* CamapaignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396B5219771C90075F75D /* CamapaignView.swift */; };
+		FA6396B8219772700075F75D /* DetailCampaignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396B7219772700075F75D /* DetailCampaignView.swift */; };
+		FA6396BA219773570075F75D /* FormCampaignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396B9219773570075F75D /* FormCampaignView.swift */; };
+		FA6396BC219774800075F75D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396BB219774800075F75D /* LoginView.swift */; };
+		FA6396BE219774D90075F75D /* ManualTracingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396BD219774D90075F75D /* ManualTracingView.swift */; };
+		FA6396C0219775040075F75D /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396BF219775040075F75D /* MarkerView.swift */; };
+		FA6396C22197752E0075F75D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396C12197752E0075F75D /* MenuView.swift */; };
+		FA6396C52197759C0075F75D /* NewCampaignSmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396C42197759C0075F75D /* NewCampaignSmsView.swift */; };
+		FA6396C7219775D30075F75D /* NewCampaignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396C6219775D30075F75D /* NewCampaignView.swift */; };
+		FA6396C9219776160075F75D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396C8219776160075F75D /* RegisterView.swift */; };
+		FA6396CB2197763E0075F75D /* SmsManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396CA2197763E0075F75D /* SmsManagerView.swift */; };
+		FA6396CD219776600075F75D /* TracingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396CC219776600075F75D /* TracingView.swift */; };
+		FA6396CF2197769C0075F75D /* CampaignSmsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396CE2197769C0075F75D /* CampaignSmsController.swift */; };
+		FA6396D12197775F0075F75D /* CampaignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396D02197775F0075F75D /* CampaignController.swift */; };
+		FA6396D3219778740075F75D /* DetailCampaignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396D2219778740075F75D /* DetailCampaignController.swift */; };
+		FA6396D52197798D0075F75D /* FormCampaignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396D42197798D0075F75D /* FormCampaignController.swift */; };
+		FA6396D721977AA10075F75D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396D621977AA10075F75D /* LoginController.swift */; };
+		FA6396D921977C760075F75D /* ManualTracingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396D821977C760075F75D /* ManualTracingController.swift */; };
+		FA6396DB21977CDE0075F75D /* MarkerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396DA21977CDE0075F75D /* MarkerController.swift */; };
+		FA6396DD21977D100075F75D /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396DC21977D100075F75D /* MenuController.swift */; };
+		FA6396DF21977DD70075F75D /* NewCampaingSmsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396DE21977DD70075F75D /* NewCampaingSmsController.swift */; };
+		FA6396E121977E9A0075F75D /* NewCampaignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396E021977E9A0075F75D /* NewCampaignController.swift */; };
+		FA6396E321977F8F0075F75D /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396E221977F8F0075F75D /* RegisterController.swift */; };
+		FA6396E521977FCB0075F75D /* SmsManagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396E421977FCB0075F75D /* SmsManagerController.swift */; };
+		FA6396E721977FF30075F75D /* TracingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396E621977FF30075F75D /* TracingController.swift */; };
+		FA6396E92199F2F10075F75D /* SmsManagerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6396E82199F2F00075F75D /* SmsManagerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BD2A267EACBAF9AAE431019 /* Pods-Advans.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advans.release.xcconfig"; path = "Pods/Target Support Files/Pods-Advans/Pods-Advans.release.xcconfig"; sourceTree = "<group>"; };
+		30F455E31AB7D5E0681515A1 /* Pods_Advans.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Advans.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87D062F57CFC40261E8D984A /* Pods-Advans.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advans.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Advans/Pods-Advans.debug.xcconfig"; sourceTree = "<group>"; };
+		FA2662CE219CB056000012AF /* SocialMediaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaController.swift; sourceTree = "<group>"; };
+		FA2662D0219CB41C000012AF /* MenuSocialMediaViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSocialMediaViewCell.swift; sourceTree = "<group>"; };
+		FA2662D7219E3C38000012AF /* MenuWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWidgetView.swift; sourceTree = "<group>"; };
+		FA2662D9219E3C7E000012AF /* ButtonMenuSocialViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonMenuSocialViewCell.swift; sourceTree = "<group>"; };
+		FA2662DF219FAD24000012AF /* TempController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempController.swift; sourceTree = "<group>"; };
+		FA2662E121A0B128000012AF /* CampaignViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignViewCell.swift; sourceTree = "<group>"; };
+		FA2662E421A0BE9C000012AF /* CampaingControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaingControllerExtension.swift; sourceTree = "<group>"; };
+		FA2662E721A0C269000012AF /* CampaignViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignViewCellExtension.swift; sourceTree = "<group>"; };
+		FA2662E921A0C2EB000012AF /* CampaignStatusViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignStatusViewCell.swift; sourceTree = "<group>"; };
 		FA6396892197674E0075F75D /* Advans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Advans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA63968C2197674E0075F75D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA63968E2197674E0075F75D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA6396912197674E0075F75D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA6396942197674E0075F75D /* Advans.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Advans.xcdatamodel; sourceTree = "<group>"; };
 		FA639696219767590075F75D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA6396992197675A0075F75D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA63969B2197675A0075F75D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA6396A521976B710075F75D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA6396A721976BBE0075F75D /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		FA6396A921976C020075F75D /* Archive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
+		FA6396AB21976EC30075F75D /* CampaignSms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignSms.swift; sourceTree = "<group>"; };
+		FA6396AD21976EF60075F75D /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
+		FA6396AF21976F950075F75D /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		FA6396B121976FBB0075F75D /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		FA6396B321976FE00075F75D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA6396B5219771C90075F75D /* CamapaignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamapaignView.swift; sourceTree = "<group>"; };
+		FA6396B7219772700075F75D /* DetailCampaignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCampaignView.swift; sourceTree = "<group>"; };
+		FA6396B9219773570075F75D /* FormCampaignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCampaignView.swift; sourceTree = "<group>"; };
+		FA6396BB219774800075F75D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FA6396BD219774D90075F75D /* ManualTracingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualTracingView.swift; sourceTree = "<group>"; };
+		FA6396BF219775040075F75D /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		FA6396C12197752E0075F75D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		FA6396C42197759C0075F75D /* NewCampaignSmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCampaignSmsView.swift; sourceTree = "<group>"; };
+		FA6396C6219775D30075F75D /* NewCampaignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCampaignView.swift; sourceTree = "<group>"; };
+		FA6396C8219776160075F75D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		FA6396CA2197763E0075F75D /* SmsManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsManagerView.swift; sourceTree = "<group>"; };
+		FA6396CC219776600075F75D /* TracingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracingView.swift; sourceTree = "<group>"; };
+		FA6396CE2197769C0075F75D /* CampaignSmsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignSmsController.swift; sourceTree = "<group>"; };
+		FA6396D02197775F0075F75D /* CampaignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignController.swift; sourceTree = "<group>"; };
+		FA6396D2219778740075F75D /* DetailCampaignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCampaignController.swift; sourceTree = "<group>"; };
+		FA6396D42197798D0075F75D /* FormCampaignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCampaignController.swift; sourceTree = "<group>"; };
+		FA6396D621977AA10075F75D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		FA6396D821977C760075F75D /* ManualTracingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualTracingController.swift; sourceTree = "<group>"; };
+		FA6396DA21977CDE0075F75D /* MarkerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerController.swift; sourceTree = "<group>"; };
+		FA6396DC21977D100075F75D /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		FA6396DE21977DD70075F75D /* NewCampaingSmsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCampaingSmsController.swift; sourceTree = "<group>"; };
+		FA6396E021977E9A0075F75D /* NewCampaignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCampaignController.swift; sourceTree = "<group>"; };
+		FA6396E221977F8F0075F75D /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		FA6396E421977FCB0075F75D /* SmsManagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsManagerController.swift; sourceTree = "<group>"; };
+		FA6396E621977FF30075F75D /* TracingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracingController.swift; sourceTree = "<group>"; };
+		FA6396E82199F2F00075F75D /* SmsManagerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsManagerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +117,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DABBF75B4A517CBF98A237 /* Pods_Advans.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1331A95B0029C97F0F211BA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30F455E31AB7D5E0681515A1 /* Pods_Advans.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		573697E5828A5E9B85116260 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87D062F57CFC40261E8D984A /* Pods-Advans.debug.xcconfig */,
+				0BD2A267EACBAF9AAE431019 /* Pods-Advans.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA2662E321A0B88A000012AF /* Campaing */ = {
+			isa = PBXGroup;
+			children = (
+				FA6396D02197775F0075F75D /* CampaignController.swift */,
+				FA2662E421A0BE9C000012AF /* CampaingControllerExtension.swift */,
+			);
+			path = Campaing;
+			sourceTree = "<group>";
+		};
+		FA2662E621A0C231000012AF /* Campaign */ = {
+			isa = PBXGroup;
+			children = (
+				FA2662E121A0B128000012AF /* CampaignViewCell.swift */,
+				FA2662E721A0C269000012AF /* CampaignViewCellExtension.swift */,
+				FA2662E921A0C2EB000012AF /* CampaignStatusViewCell.swift */,
+			);
+			path = Campaign;
+			sourceTree = "<group>";
+		};
 		FA6396802197674E0075F75D = {
 			isa = PBXGroup;
 			children = (
 				FA63968B2197674E0075F75D /* Advans */,
 				FA63968A2197674E0075F75D /* Products */,
+				573697E5828A5E9B85116260 /* Pods */,
+				1331A95B0029C97F0F211BA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +181,85 @@
 		FA63968B2197674E0075F75D /* Advans */ = {
 			isa = PBXGroup;
 			children = (
-				FA63968C2197674E0075F75D /* AppDelegate.swift */,
-				FA63968E2197674E0075F75D /* ViewController.swift */,
-				FA6396902197674E0075F75D /* Main.storyboard */,
-				FA639696219767590075F75D /* Assets.xcassets */,
-				FA6396982197675A0075F75D /* LaunchScreen.storyboard */,
+				FA6396A321976B2D0075F75D /* Helpers */,
+				FA6396A121976B200075F75D /* Model */,
+				FA6396A421976B3E0075F75D /* View */,
+				FA6396A221976B270075F75D /* Controller */,
 				FA63969B2197675A0075F75D /* Info.plist */,
+				FA63968C2197674E0075F75D /* AppDelegate.swift */,
+				FA639696219767590075F75D /* Assets.xcassets */,
 				FA6396932197674E0075F75D /* Advans.xcdatamodeld */,
+				FA6396982197675A0075F75D /* LaunchScreen.storyboard */,
 			);
 			path = Advans;
+			sourceTree = "<group>";
+		};
+		FA6396A121976B200075F75D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA6396A921976C020075F75D /* Archive.swift */,
+				FA6396AB21976EC30075F75D /* CampaignSms.swift */,
+				FA6396AD21976EF60075F75D /* Campaign.swift */,
+				FA6396AF21976F950075F75D /* Menu.swift */,
+				FA6396B121976FBB0075F75D /* Register.swift */,
+				FA6396B321976FE00075F75D /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA6396A221976B270075F75D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA2662E321A0B88A000012AF /* Campaing */,
+				FA6396CE2197769C0075F75D /* CampaignSmsController.swift */,
+				FA6396D2219778740075F75D /* DetailCampaignController.swift */,
+				FA6396D42197798D0075F75D /* FormCampaignController.swift */,
+				FA6396D621977AA10075F75D /* LoginController.swift */,
+				FA6396D821977C760075F75D /* ManualTracingController.swift */,
+				FA6396DA21977CDE0075F75D /* MarkerController.swift */,
+				FA6396DC21977D100075F75D /* MenuController.swift */,
+				FA6396E021977E9A0075F75D /* NewCampaignController.swift */,
+				FA6396DE21977DD70075F75D /* NewCampaingSmsController.swift */,
+				FA6396E221977F8F0075F75D /* RegisterController.swift */,
+				FA6396E421977FCB0075F75D /* SmsManagerController.swift */,
+				FA2662CE219CB056000012AF /* SocialMediaController.swift */,
+				FA6396E621977FF30075F75D /* TracingController.swift */,
+				FA2662DF219FAD24000012AF /* TempController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA6396A321976B2D0075F75D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA6396A521976B710075F75D /* Extensions.swift */,
+				FA6396A721976BBE0075F75D /* Global.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FA6396A421976B3E0075F75D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA2662E621A0C231000012AF /* Campaign */,
+				FA2662D9219E3C7E000012AF /* ButtonMenuSocialViewCell.swift */,
+				FA6396B5219771C90075F75D /* CamapaignView.swift */,
+				FA6396B7219772700075F75D /* DetailCampaignView.swift */,
+				FA6396B9219773570075F75D /* FormCampaignView.swift */,
+				FA6396BB219774800075F75D /* LoginView.swift */,
+				FA6396BD219774D90075F75D /* ManualTracingView.swift */,
+				FA6396BF219775040075F75D /* MarkerView.swift */,
+				FA2662D0219CB41C000012AF /* MenuSocialMediaViewCell.swift */,
+				FA6396C12197752E0075F75D /* MenuView.swift */,
+				FA2662D7219E3C38000012AF /* MenuWidgetView.swift */,
+				FA6396C42197759C0075F75D /* NewCampaignSmsView.swift */,
+				FA6396C6219775D30075F75D /* NewCampaignView.swift */,
+				FA6396C8219776160075F75D /* RegisterView.swift */,
+				FA6396E82199F2F00075F75D /* SmsManagerDetailView.swift */,
+				FA6396CA2197763E0075F75D /* SmsManagerView.swift */,
+				FA6396CC219776600075F75D /* TracingView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA63969E2197675A0075F75D /* Build configuration list for PBXNativeTarget "Advans" */;
 			buildPhases = (
+				574D44B814BFF3B66F490371 /* [CP] Check Pods Manifest.lock */,
 				FA6396852197674E0075F75D /* Sources */,
 				FA6396862197674E0075F75D /* Frameworks */,
 				FA6396872197674E0075F75D /* Resources */,
+				0F4EFD274F8ED84A0085AAE8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +324,112 @@
 			files = (
 				FA63969A2197675A0075F75D /* LaunchScreen.storyboard in Resources */,
 				FA639697219767590075F75D /* Assets.xcassets in Resources */,
-				FA6396922197674E0075F75D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F4EFD274F8ED84A0085AAE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Advans/Pods-Advans-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DownPicker/DownPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UITextView+Placeholder/UITextView_Placeholder.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DownPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITextView_Placeholder.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Advans/Pods-Advans-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		574D44B814BFF3B66F490371 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Advans-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA6396852197674E0075F75D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6396BA219773570075F75D /* FormCampaignView.swift in Sources */,
+				FA6396C9219776160075F75D /* RegisterView.swift in Sources */,
+				FA6396E321977F8F0075F75D /* RegisterController.swift in Sources */,
 				FA6396952197674E0075F75D /* Advans.xcdatamodeld in Sources */,
-				FA63968F2197674E0075F75D /* ViewController.swift in Sources */,
+				FA2662E0219FAD24000012AF /* TempController.swift in Sources */,
+				FA6396AE21976EF60075F75D /* Campaign.swift in Sources */,
+				FA6396E121977E9A0075F75D /* NewCampaignController.swift in Sources */,
+				FA6396D721977AA10075F75D /* LoginController.swift in Sources */,
+				FA6396AC21976EC30075F75D /* CampaignSms.swift in Sources */,
+				FA6396B221976FBB0075F75D /* Register.swift in Sources */,
+				FA6396C7219775D30075F75D /* NewCampaignView.swift in Sources */,
+				FA6396CB2197763E0075F75D /* SmsManagerView.swift in Sources */,
+				FA2662CF219CB056000012AF /* SocialMediaController.swift in Sources */,
+				FA6396E521977FCB0075F75D /* SmsManagerController.swift in Sources */,
+				FA6396E721977FF30075F75D /* TracingController.swift in Sources */,
+				FA6396C52197759C0075F75D /* NewCampaignSmsView.swift in Sources */,
+				FA6396DD21977D100075F75D /* MenuController.swift in Sources */,
+				FA2662DA219E3C7E000012AF /* ButtonMenuSocialViewCell.swift in Sources */,
+				FA6396D921977C760075F75D /* ManualTracingController.swift in Sources */,
 				FA63968D2197674E0075F75D /* AppDelegate.swift in Sources */,
+				FA6396B6219771C90075F75D /* CamapaignView.swift in Sources */,
+				FA6396D52197798D0075F75D /* FormCampaignController.swift in Sources */,
+				FA6396CF2197769C0075F75D /* CampaignSmsController.swift in Sources */,
+				FA2662D8219E3C38000012AF /* MenuWidgetView.swift in Sources */,
+				FA6396C22197752E0075F75D /* MenuView.swift in Sources */,
+				FA6396E92199F2F10075F75D /* SmsManagerDetailView.swift in Sources */,
+				FA2662E221A0B128000012AF /* CampaignViewCell.swift in Sources */,
+				FA6396B8219772700075F75D /* DetailCampaignView.swift in Sources */,
+				FA2662E521A0BE9D000012AF /* CampaingControllerExtension.swift in Sources */,
+				FA6396D3219778740075F75D /* DetailCampaignController.swift in Sources */,
+				FA2662E821A0C269000012AF /* CampaignViewCellExtension.swift in Sources */,
+				FA6396C0219775040075F75D /* MarkerView.swift in Sources */,
+				FA6396DB21977CDE0075F75D /* MarkerController.swift in Sources */,
+				FA6396BC219774800075F75D /* LoginView.swift in Sources */,
+				FA6396CD219776600075F75D /* TracingView.swift in Sources */,
+				FA6396DF21977DD70075F75D /* NewCampaingSmsController.swift in Sources */,
+				FA2662EA21A0C2EB000012AF /* CampaignStatusViewCell.swift in Sources */,
+				FA6396A821976BBE0075F75D /* Global.swift in Sources */,
+				FA6396B021976F950075F75D /* Menu.swift in Sources */,
+				FA6396AA21976C020075F75D /* Archive.swift in Sources */,
+				FA6396A621976B710075F75D /* Extensions.swift in Sources */,
+				FA6396BE219774D90075F75D /* ManualTracingView.swift in Sources */,
+				FA2662D1219CB41C000012AF /* MenuSocialMediaViewCell.swift in Sources */,
+				FA6396B421976FE00075F75D /* User.swift in Sources */,
+				FA6396D12197775F0075F75D /* CampaignController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FA6396902197674E0075F75D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA6396912197674E0075F75D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA6396982197675A0075F75D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +559,7 @@
 		};
 		FA63969F2197675A0075F75D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D062F57CFC40261E8D984A /* Pods-Advans.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +578,7 @@
 		};
 		FA6396A02197675A0075F75D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BD2A267EACBAF9AAE431019 /* Pods-Advans.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
